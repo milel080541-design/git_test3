@@ -16,7 +16,7 @@ public class Sort {
         for (int j = start; j <= end -1; ++j)
             if (a[j] < value)
                 swap(a, ++i, j);
-            swap (a, ++i, j);
+            swap (a, i + 1, end);
         return i + 1;
     }
 
