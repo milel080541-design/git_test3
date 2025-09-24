@@ -11,7 +11,13 @@ public class Sort {
     }
 
     static int parttition(int[] a, int start, int end) {
-        // TODO: parttition 알고리즘을 구현해야함
+        int value = a[end];
+        int i = start -1;
+        for (int j = start; j <= end -1; ++j)
+            if (a[j] < value)
+                swap(a, ++i, j);
+            swap (a, ++i, j);
+        return i + 1;
     }
 
     static void quickSort(int[] a, int start, int end) {
